@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".Activities.ProductsActivity">
+    <androidx.appcompat.widget.Toolbar
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="?attr/colorPrimary"
+             app:theme="@style/ToolBarStyle"
+             android:id="@+id/toolbar"/>
+
+    <com.google.android.material.tabs.TabLayout
+             android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/tabLayout">
+
+        <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comidas"
+                android:id="@+id/foodTab"/>
+        <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bebidas"
+                android:id="@+id/drinkTab"/>
+        <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complementos"
+                android:id="@+id/complementsTab"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewPager"/>
+
+
+</LinearLayout>

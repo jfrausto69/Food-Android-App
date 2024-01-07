@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/ToolBarStyle"
+            android:id="@+id/toolbar_food_detail"/>
+
+    <!-- Título del producto -->
+    <TextView
+            android:id="@+id/productName"
+            android:layout_below="@+id/toolbar_food_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Producto"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="16dp"/>
+
+    <!-- Imagen del producto -->
+    <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/productName"/>
+
+    <!-- Descripción del producto -->
+    <TextView
+            android:id="@+id/productDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productImage"
+            android:layout_margin="16dp"
+            android:text="Descripción del producto"
+            android:textSize="18sp" />
+
+    <!-- Precio en formato de moneda -->
+    <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:text="$99.99"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/my_light_primary"/>
+
+</RelativeLayout>
